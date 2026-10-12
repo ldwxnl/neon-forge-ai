@@ -1,0 +1,37 @@
+# ===== 依赖 =====
+node_modules/
+
+# ===== 密钥 / 本地配置：绝不提交 =====
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# ===== 运行数据（含 AI 的对话记忆，绝不提交）=====
+data/*
+!data/.gitkeep
+**/data/*
+!**/data/.gitkeep
+
+# ===== 日志 =====
+*.log
+logs/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ===== Gradle / Java 构建产物 =====
+mod/.gradle/
+mod/build/
+mod/run/
+mod/mdk.zip
+
+# ===== 编辑器 / 系统 =====
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
